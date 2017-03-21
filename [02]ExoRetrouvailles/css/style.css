@@ -5,11 +5,15 @@
 /* Appeler la font --> font-family: 'Source Code Pro', monospace; */
 
 body{
+  background-image: url('http://more-sky.com/data/out/6/IMG_95596.png');
   font-family: 'Source Code Pro', monospace;
+
   }
   h3{
     text-align: center;
     text-transform: uppercase;
+    color:white;
+    font-size: 20px;
   }
 
   img{
@@ -21,10 +25,10 @@ body{
   button{
     margin: auto;
     display: block;
-    font-size: 25px;
+    font-size: 40px;
     text-transform: uppercase;
     position: relative;
-    top: 30px;
+    top: 40px;
   }
 
 .profil{
@@ -37,8 +41,7 @@ body{
   top: 102px;
   color: white;
   font-weight: bold;
-  box-shadow: 3px 4px 1px 0px white;
-  padding: 0 7px 7px 0;
+  padding: 0 88px 7px 0;
 }
 
 #character_01{

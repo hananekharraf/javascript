@@ -59,6 +59,20 @@ function dialogue(){
     var contexte = document.getElementById('character_01');
     var paroles = data.perso_0.texte;
   }
+  if (index ==2 ){
+    var tabimage = data.perso_0 ;
+    var image = document.getElementById('character_01').getElementsByTagName('img');
+    image[0].src = tabimage.picture02
+
+  }
+  if (index ==2 ){
+    var tabimage = data.perso_1 ;
+    var image = document.getElementById('character_02').getElementsByTagName('img');
+    image[0].src = tabimage.picture03
+
+  }
+  console.log('valeur de contexte: '+contexte)
+  console.log('valeur de paroles: '+contexte)
   var dom = contexte.getElementsByClassName('center'); //--> Renvoie un tableau
   dom[0].innerHTML = paroles[ index%3 ];
   index++;
