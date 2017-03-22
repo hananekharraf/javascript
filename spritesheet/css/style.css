@@ -1,0 +1,81 @@
+body{
+  background-image: url('http://www.weloveprovence.fr/photos/provence/ville/4739691758-Provence-p.jpg');
+  background-size: cover,
+  animation-name : foodowne,
+  animation-duration :3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes backMove{
+  0%{
+    background-position: -x :0;
+  }
+  100%{
+    background-position: -x :100%;
+  }
+
+}
+.run{
+  background-image: url('../img/cheval01.jpg');
+  animation-name:run;
+  animation-duration:1s;
+  animation-iteration-count: infinite;
+  height:  500px;
+  width: 500px;
+  /*background-size: cover;*/
+  background-size:auto  250px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.jump{
+  background-image: url('../img/cheval01.jpg');
+  background-size:auto  250px;
+  animation-name: jump;
+  background-repeat: no-repeat;
+  animation-duration: infinite;
+  height: 500px;
+  width: 500px;
+  position: relative;
+  bottom: 0;
+
+}
+
+@keyframes run {
+  0%{
+    background-image: url('../img/cheval04.jpg');
+  }
+  25%{
+    background-image: url('../img/cheval03.jpg');
+  }
+  50%{
+    background-image: url('../img/cheval02.jpg');
+  }
+  85%{
+    background-image: url('../img/cheval01.jpg');
+  }
+}
+@keyframes jump {
+  0%{
+    background-image: url('../img/cheval04.jpg');
+    bottom: 0;
+  }
+  25%{
+    background-image: url('../img/cheval03.jpg');
+    bottom: 180px;
+  }
+  50%{
+    background-image: url('../img/cheval02.jpg');
+    bottom: 200px;
+  }
+  85%{
+    background-image: url('../img/cheval01.jpg');
+    bottom: 0;
+  }
+}
+
+#runcheval div{
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 500px;
+}
